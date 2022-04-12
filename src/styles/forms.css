@@ -1,0 +1,74 @@
+form.custom-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 40px;
+  max-width: 90%;
+}
+
+form.custom-form label {
+  color: var(--text-color-highlight);
+}
+
+form.custom-form .icon-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form.custom-form .icon-input input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  padding: 10px 0 8px 38px;
+  background-color: transparent;
+  width: 100%;
+  color: var(--text-color);
+}
+
+form.custom-form .icon-input input:active,
+form.custom-form .icon-input input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+form.custom-form .icon-input input::placeholder {
+  color: var(--text-color);
+}
+
+form.custom-form .email-input::before,
+form.custom-form .password-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  margin: 6px 10px;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+form.custom-form .email-input::before {
+  background-image: url("../../public/assets/envelope-solid.svg");
+}
+
+
+form.custom-form .password-input::before {
+  background-image: url("../../public/assets/lock-solid.svg");
+}
+
+form.custom-form a {
+  margin: -10px 0 30px auto;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+form.custom-form button[type="submit"] {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--grey-20);
+  font-weight: 600;
+  color: var(--white);
+}
