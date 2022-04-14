@@ -29,23 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-head {
-  /* ====== FAVICONS ===== */
-  --light-favicon: url("../../../public/assets/favicons/favicon3.ico");
-  --black-favicon: url("../../../public/assets/favicons/favicon4.ico");
-
-}
 
 body {
 	line-height: 1;
-
-  /* ====== IMAGES ===== */
-
-  --login-background-image: url("../../../public/assets/Fundal8.png");
-  --signup-background-image: url("../../../public/assets/Fundal12.png");
-  
-  
-
 }
 table {
 	border-collapse: collapse;
@@ -101,6 +87,11 @@ body {
 
   /* ====== DIMENSIONS ====== */
   --border-radius: 4px;
+
+  /* ====== IMAGES ===== */
+  --login-background-image: url("../../../public/assets/Fundal8.png");
+  --signup-background-image: url("../../../public/assets/Fundal12.png");
+
 }
 
 /* ====== DEFINE COMMON STYLES ====== */
