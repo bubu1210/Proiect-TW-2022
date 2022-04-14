@@ -28,8 +28,24 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+head {
+  /* ====== FAVICONS ===== */
+  --light-favicon: url("../../../public/assets/favicons/favicon3.ico");
+  --black-favicon: url("../../../public/assets/favicons/favicon4.ico");
+
+}
+
 body {
 	line-height: 1;
+
+  /* ====== IMAGES ===== */
+
+  --login-background-image: url("../../../public/assets/Fundal8.png");
+  --signup-background-image: url("../../../public/assets/Fundal12.png");
+  
+  
+
 }
 table {
 	border-collapse: collapse;
@@ -97,3 +113,6 @@ a {
   text-decoration: none;
   color: var(--text-color-highlight);
 }
+
+
+

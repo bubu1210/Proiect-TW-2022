@@ -7,15 +7,20 @@
   <link rel="icon" type="image/x-icon" href="../../../public/assets/favicons/favicon3.ico">
 
   <link rel="stylesheet" href="../../styles/index.css">
-  <link rel="stylesheet" href="login.css">
-
-  <title>Login</title>
+  <link rel="stylesheet" href="signup.css">
+  
+    <title>Sign Up</title>
 </head>
 <body>
   <div class="background">
-    <div class="login-wrapper">
-      <h1>Login</h1>
+    <div class="signup-wrapper">
+      <h1>Sign Up</h1>
       <form action="" class="custom-form">
+        <label for="email">Username</label>
+        <div class="icon-input username-input">
+          <input type="text" id="username" placeholder="Type in your username">
+        </div>
+
         <label for="email">Email</label>
         <div class="icon-input email-input">
           <input type="email" id="email" placeholder="Type in your email">
@@ -26,13 +31,18 @@
           <input type="password" id="password" placeholder="Type in your password">
         </div>
 
-        <a href="#">Forgot password?</a>
-        <button type="submit">LOGIN</button>
+        <label for="password">Confirm password</label>
+        <div class="icon-input confirm-password-input">
+          <input type="password" id="password" placeholder="Re-type your password">
+        </div>
+
+        
+        <button type="submit">SUBMIT</button>
       </form>
 
       <div class="redirect-register">
-        <p>Don't have an account?</p>
-        <a href="../SignUp/signup.html">SIGN UP</a>
+        <p>Already have an account?</p>
+        <a href="../Login/login.html">LOGIN</a>
       </div>
     </div>
   </div>
