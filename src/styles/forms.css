@@ -24,12 +24,6 @@ form.custom-form .icon-input input {
   color: var(--text-color);
 }
 
-form.custom-form .icon-input input:active,
-form.custom-form .icon-input input:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 form.custom-form .icon-input input::placeholder {
   color: var(--text-color);
 }
