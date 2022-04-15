@@ -56,6 +56,13 @@ body {
   --xl: 1200px;
   --xxl: 1440px;
 
+  /* ====== CONTAINER SIZES ====== */
+  --w-sm: 90%;
+  --w-md: 600px;
+  --w-lg: 768px;
+  --w-xl: 992px;
+  --w-xxl: 1200px;
+
   /* ====== FONTS ====== */
   --h1-font-size: 32px;
   --h1-mobile-font-size: 26px;
@@ -109,6 +116,41 @@ input:active,
 input:focus {
   outline: none;
   box-shadow: none;
+}
+
+.content-layout {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-layout {
+    width: var(--w-sm);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .content-layout {
+    width: var(--w-md);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .content-layout {
+    width: var(--w-lg);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .content-layout {
+    width: var(--w-xl);
+  }
+}
+
+@media only screen and (min-width: 14400px) {
+  .content-layout {
+    width: var(--w-sm);
+  }
 }
 
 
