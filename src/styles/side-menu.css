@@ -3,6 +3,8 @@
   max-width: 250px;
   border-radius: var(--border-radius);
   padding: 15px;
+  background-color: var(--white);
+  box-shadow: 1px 0 16px var(--grey-10);
 }
 
 .side-menu #menu-avatar {
@@ -25,7 +27,7 @@
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
-  background-color: var(--grey-20);
+  background-color: var(--grey-10);
   border-radius: var(--border-radius);
 
   text-align: center;
