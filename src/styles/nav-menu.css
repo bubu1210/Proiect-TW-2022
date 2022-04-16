@@ -1,5 +1,5 @@
 .nav-menu {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   height: 60px;
@@ -8,7 +8,20 @@
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--grey-100);
+  /* height: inherit; */
+  width: -webkit-fill-available;
+  /* position: sticky;
+  top: 0;
+  left: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--grey-100); */
 }
+
+
 
 .nav-menu .logo-wrapper {
   display: flex;
@@ -45,7 +58,7 @@
   height: 100%;
   border-radius: 20px;
   border: 1px solid var(--black);
-  background-color: var(--grey-20);
+  background-color: var(--white);
   padding-left: 32px;
   color: var(--black);
 }
@@ -80,7 +93,7 @@
 .profile-menu__dropdown {
   display: none;
   position: absolute;
-  right: 0px;
+  right: -20px;
   top: 100%;
   width: 150px;
   flex-direction: column;

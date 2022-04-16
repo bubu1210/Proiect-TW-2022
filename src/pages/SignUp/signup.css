@@ -41,7 +41,10 @@
 
 @media only screen and (max-width: 768px) {
   body {
+    background-image: var(--mobil-background-image);
     background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
   }
 }
 
