@@ -120,11 +120,13 @@ table {
 html {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 /* ====== VARS ====== */
@@ -141,7 +143,7 @@ body {
   --w-md: 600px;
   --w-lg: 768px;
   --w-xl: 992px;
-  --w-xxl: 1200px;
+  --w-xxl: 1024px;
 
   /* ====== FONTS ====== */
   --h1-font-size: 32px;
@@ -198,6 +200,7 @@ body {
 
 * {
   color: var(--text-color);
+  box-sizing: border-box;
 }
 
 a {
@@ -212,8 +215,9 @@ input:focus {
 }
 
 .content-layout {
-  padding-top: 30px;
+  padding: 30px 20px 0;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -240,8 +244,8 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 14400px) {
+@media only screen and (min-width: 1200px) {
   .content-layout {
-    width: var(--w-sm);
+    width: var(--w-xxl);
   }
 }
