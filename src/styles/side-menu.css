@@ -4,7 +4,8 @@
   border-radius: var(--border-radius);
   padding: 15px;
   background-color: var(--white);
-  box-shadow: 1px 0 16px var(--grey-10);
+  box-shadow: var(--box-shadow);
+  align-self: flex-start;
 }
 
 .side-menu #menu-avatar {

@@ -177,6 +177,9 @@ body {
   /* ====== DIMENSIONS ====== */
   --border-radius: 4px;
 
+  /* ====== SHADOW ====== */
+  --box-shadow: 1px 0 16px var(--grey-10);
+
   /* ====== IMAGES ===== */
   --login-background-image: url("../../../public/assets/Fundal8.png");
   --signup-background-image: url("../../../public/assets/watermark-web-background.png");
@@ -218,6 +221,8 @@ input:focus {
   padding: 30px 20px 0;
   margin: 0 auto;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
@@ -229,6 +234,19 @@ input:focus {
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .content-layout {
     width: var(--w-md);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content-layout {
+    flex-direction: row;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 2rem;
   }
 }
 
@@ -244,8 +262,15 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .content-layout {
     width: var(--w-xxl);
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .content-layout {
+    width: var(--xl);
+  }
+}
+
