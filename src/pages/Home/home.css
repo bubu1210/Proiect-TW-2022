@@ -17,11 +17,15 @@ h1 {
 
 }
 
+.nav-menu+ * {
+  margin-top: 60px;
+}
+
 .carousel-wrapper {
   display: block;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .images-plus-link {

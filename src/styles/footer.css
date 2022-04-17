@@ -1,18 +1,16 @@
-* {
-    --text-color: white;
-}
 
 footer {
     background-color: var(--grey-100);
+    
 }
 
 footer p {
-    color: var(--black);
     padding: 1vw;
     font-family: var(--p-left);
     font-weight: bold;
     font-size: 150%;
     text-align: center;
+    color: white;
 }
 
 .content-wrapper {
@@ -38,6 +36,7 @@ footer p {
     list-style: none;
     font-size: 100%;
     padding: 5%;
+    color: white;
 }
 
 
