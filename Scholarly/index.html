@@ -26,12 +26,11 @@
         </dd>
         <dt>Bugs &amp; Feedback</dt>
         <dd>
-          <a href="https://github.com/bubu1210/Proiect-TW-2022" target="_blank">Issues and PRs welcome!</a>
+          <a href="https://github.com/bubu1210/Proiect-TW-2022/issues" target="_blank">Issues and PRs welcome!</a>
         </dd>
       </dl>
     </div>
     <section id="introduction" role="doc-introduction">
-      <!-- review? -->
       <h2>Introduction</h2>
       <p>
         Sa se implementeze o aplicatie Web ce permite utilizatorilor autentificati gestiunea de autografe
@@ -45,14 +44,47 @@
         ale savantului S). Rapoartele despre colectiile de autografe si clasamentele pe categorii
         (e.g., cele mai multe autografe oferite de personalitatea P din domeniul D) vor fi disponibile
         si in formatele RSS, CSV si PDF.
+      </p>
 
+      <p>
         AuCo is a web application that allows its users to share, manage or exchange their autographs,
         see generated raports about them and compare their value.
       </p>
 
-      <section id="managing">
-        <h3>Managing the autographs</h3>
+      <section id="authentication">
+        <h3>Authentication</h3>
         <p>
+          In order to use the application to the fullest, users have to log in with an account. Therefore, the first page
+          they see when they access our application will be a login page. If they don't have an account,
+          they can access a sign up page where an account can be created.
+        </p>
+
+        <p>
+          A new account can be easily created with an e-mail address, an username and a password.
+          Validations will take place once the form is submitted - both on the front-end and the
+          back-end.
+        </p>
+      </section>
+
+      <section id="home">
+        <h3>Home page</h3>
+        <p>
+          Once logged in, the user will be redirected to the homepage, where he can preview some of the
+          most recent autographs.
+          Also the autographs are grouped based on the domain of the celebrity. The user can customise
+          his preferences and see autographs based on his interests.
+        </p>
+
+        <p>
+          From this page he can navigate the application using the top menu.
+          Main functionalities are:
+          <ul>
+            <li>Adding an autograph</li>
+            <li>Filtering autographs using the searchbar and other custom filters</li>
+            <li>Customizing his profile</li>
+            <li>Generating raports</li>
+            <li>Viewing other users profiles</li>
+          </ul>
         </p>
       </section>
 
@@ -74,21 +106,53 @@
           of tags.
         </p>
       </section>
-      <p>
-        According to the New York Times, adding structured information to their recipes improved
-        their discoverability to the point of producing an immediate rise of 52 percent in traffic
-        (<a role="doc-biblioref">CSS</a>). At this point in time, cupcake recipes are reaping
-        greater benefits from modern data format practices than the whole scientific endeavour.
-      </p>
-    </section>
-    <section id="structure">
-      <!-- review? -->
-      <h2>Structure</h2>
 
-      <p class="issue">
-        Let’s discuss details of iframes with the CG
-      </p>
-    </section>
+      <section id="design">
+        <h3>Design</h3>
+        <p>
+          We tried to make our application as easy to use as possible and each feature and
+          component was designed with the core functionalities in mind, making sure it is also
+          intuitive to use.
+        </p>
 
+        <p>
+          Starting fron the home page, a preview of the most recent autographs is displayed with a
+          slider component, but we also give the possibility to access all the autographs with a simple
+          click.
+        </p>
+
+        <p>
+          The autographs are featured using 2 components - a simple card used in the afore mentioned slider,
+          and a more detailed card shown when viewing all the autographs.
+        </p>
+
+        <p>
+          The menu consists of a searchbar with an advanced search functionality, and a user info widget,
+          indicating his authentication status, which, once the user is logged in, shows his avatar and
+          toggles a dropdown for easy navigation to the most important pages.
+        </p>
+
+        <p>
+          On the user page, a side menu is used to control and show only the relevant information for the user
+          in the main view.
+        </p>
+
+        <p>
+          The color theme consists of a simple pallete of black, white and several shades of grey, so we don't
+          subtract from the beauty of the autographs added by our lovely users *wink* (please donate).
+        </p>
+
+        <p>
+          We tried to maintain a consistent look throughout the application by using a simple design system
+          just so we can reuse as much of our resources as possible. We did this by defining variables for
+          our colors, fonts, background images, modularizing our stylesheets and using the same structure for
+          the HTML.
+        </p>
+
+        <p>
+          We implemented a responsive design by using a mobile first approach.
+        </p>
+      </section>
+    </section>
   </body>
 </html>
