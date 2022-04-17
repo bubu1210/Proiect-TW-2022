@@ -97,6 +97,9 @@ body {
   /* ====== DIMENSIONS ====== */
   --border-radius: 4px;
 
+  /* ====== SHADOW ====== */
+  --box-shadow: 1px 0 16px var(--grey-10);
+
   /* ====== IMAGES ===== */
   --login-background-image: url("../../../public/assets/Fundal8.png");
   --signup-background-image: url("../../../public/assets/Fundal12.png");
@@ -166,9 +169,15 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .content-layout {
     width: var(--w-xxl);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .content-layout {
+    width: var(--xl);
   }
 }
 

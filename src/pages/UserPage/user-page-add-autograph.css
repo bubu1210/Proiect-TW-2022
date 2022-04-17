@@ -1,0 +1,113 @@
+/* ====== ADD AUTOGRAPH ====== */
+.add-autograph {
+  margin-top: 2rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.add-autograph > form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .left-side,
+form .right-side {
+  padding: 30px;
+
+}
+
+form .left-side {
+  flex-grow: 1;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-group label,
+.input-group--wide label {
+  display: block;
+}
+
+.input-group input,
+.input-group select,
+.input-group--wide textarea {
+  display: block;
+  width: 90%;
+}
+
+.input-group--wide textarea {
+  min-height: 5rem;
+}
+
+.input-group--tags input {
+  display: inline-block;
+}
+
+ul.tag-list {
+  list-style: none;
+}
+
+form .right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+form .right-side > * {
+  max-width: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .add-autograph {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .add-autograph {
+    margin-top: 0;
+  }
+
+  .add-autograph > form {
+    flex-direction: row;
+  }
+
+  form .left-side {
+    border-right: 1px solid var(--grey-10);
+  }
+
+  form .right-side {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .left-side {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    flex-basis: 50%;
+  }
+
+  .input-group--wide,
+  .input-group--tags {
+    flex-basis: 100%;
+  }
+
+  .input-group--wide textarea {
+    width: calc(2 * 50% * 90 / 100 + 50% * 10 / 100);
+  }
+
+  .input-group--tags input {
+    width: calc(50% * 90 / 100);
+  }
+}
