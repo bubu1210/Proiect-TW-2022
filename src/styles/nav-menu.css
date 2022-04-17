@@ -19,6 +19,7 @@
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--grey-100); */
+  z-index: 100;
 }
 
 

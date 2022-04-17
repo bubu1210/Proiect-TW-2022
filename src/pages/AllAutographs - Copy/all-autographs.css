@@ -1,0 +1,102 @@
+.autograph-wrapper {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    display: block;
+    margin: 80px 5% 2% 5%;
+    padding: 1%;
+}
+
+.user-details {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-details, .user-name  {
+    padding: 1%;
+    text-align: center;
+    
+}
+
+.autograph-date p {
+    width: 100%;
+}
+
+.user-image-name {
+    border-width: 9px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    flex-grow: 1;
+
+
+}
+
+.user-image {
+    border-width: 9px;
+    border-color: black;
+    border-style: solid;
+}
+
+.user-image img {
+    max-width: 100%;
+    width: 3vw;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    background-color: var(--grey-20);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user-name {
+    align-self: center;
+}
+
+.autograph-date {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /* flex-grow: 1; */
+    width: 90px;
+}
+
+.image-plus-details {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.autograph-image {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.autograph-details {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.info-group {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.info-group--wide {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
