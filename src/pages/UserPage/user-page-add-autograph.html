@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,8 @@
   <link rel="stylesheet" href="user-page-add-autograph.css">
   <title>User page</title>
 </head>
-<body>
+
+<body class="side-menu-layout">
   <!-- NAV MENU -->
   <div class="nav-menu">
     <div class="logo-wrapper">
@@ -38,115 +40,139 @@
     </div>
   </div>
 
-  <div class="content-layout">
-    <!-- SIDE MENU -->
-    <div class="side-menu">
-      <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
-      <p class="user-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt est fugiat dolor impedit deleniti aliquid
-        eaque quas officiis, vero consectetur quod ducimus vel at dignissimos eos assumenda autem accusamus enim.
-      </p>
-      <nav class="side-menu__nav">
-        <a class="side-menu__nav__item current" href="./user-page.html">
-          My autographs
-        </a>
+  <!-- SIDE MENU -->
+  <div class="side-menu">
+    <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
+    <p class="user-description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt est fugiat dolor impedit deleniti aliquid
+      eaque quas officiis, vero consectetur quod ducimus vel at dignissimos eos assumenda autem accusamus enim.
+    </p>
+    <nav class="side-menu__nav">
+      <a class="side-menu__nav__item current" href="./user-page.html">
+        My autographs
+      </a>
 
-        <a class="side-menu__nav__item" href="./user-page-add-autograph.html">
-          Add autograph
-        </a>
+      <a class="side-menu__nav__item" href="./user-page-add-autograph.html">
+        Add autograph
+      </a>
 
-        <a class="side-menu__nav__item" href="#">
-          My info
-        </a>
+      <a class="side-menu__nav__item" href="#">
+        My info
+      </a>
 
-        <a class="side-menu__nav__item" href="#">
-          Generate raport
-        </a>
+      <a class="side-menu__nav__item" href="#">
+        Generate raport
+      </a>
 
-        <a class="side-menu__nav__item" href="#">
-          Delete account
-        </a>
-      </nav>
+      <a class="side-menu__nav__item" href="#">
+        Delete account
+      </a>
+    </nav>
+  </div>
+
+  <div class="main">
+
+    <div class="add-autograph">
+      <form>
+        <div class="left-side">
+          <div class="input-group">
+            <label for="from">From</label>
+            <input type="text" id="from">
+          </div>
+
+          <div class="input-group">
+            <label for="domain">Domain</label>
+            <select name="domain" id="domain">
+              <option value="sport">Sport</option>
+              <option value="music">Music</option>
+              <option value="movies">Movies</option>
+              <option value="business">Business</option>
+              <option value="books">Books</option>
+            </select>
+            <!-- <input type="select" id="Domain"> -->
+          </div>
+
+          <div class="input-group">
+            <label for="context">Context</label>
+            <input type="text" id="context">
+          </div>
+
+          <div class="input-group">
+            <label for="country">Country</label>
+            <input type="text" id="country">
+          </div>
+
+          <div class="input-group">
+            <label for="given-on">Given on</label>
+            <input type="text" id="given-on">
+          </div>
+
+          <div class="input-group">
+            <label for="value">Value</label>
+            <input type="text" id="value">
+          </div>
+
+          <div class="input-group input-group--wide">
+            <label for="special-mentions">Special mentions</label>
+            <textarea name="special-mentions" id="special-mentions"></textarea>
+          </div>
+
+          <div class="input-group input-group--wide">
+            <label for="exchange-with">Exchange with</label>
+            <textarea name="exchange-with" id="exchange-with"></textarea>
+          </div>
+
+          <div class="input-group input-group--tags">
+            <label for="tags">Tags</label>
+            <input type="text" placeholder="New tag" id="tags">
+            <button>+</button>
+            <ul class="tag-list">
+              <li class="tag">
+                <span>New tag</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="autograph-upload">
+            <img src="../../../public/assets/image-default-filled.svg" alt="autograph image">
+            <input type="file" name="autograph" id="autograph">
+          </div>
+
+          <button type="submit">Save</button>
+        </div>
+      </form>
     </div>
 
-    <div class="main">
+  </div>
 
-      <div class="add-autograph">
-        <form>
-          <div class="left-side">
-            <div class="input-group">
-              <label for="from">From</label>
-              <input type="text" id="from">
-            </div>
+  <!-- Footer -->
+  <footer>
+    <div class="content-wrapper">
+      <div class="social-media">
+        <h3> Follow us </h3>
+        <div class="social-media-icons-wrapper">
+          <a href="#FacebookPage">
+            <img src="../../../public/assets/icons/icons8-facebook-48.svg" alt="Facebook icon">
+          </a>
 
-            <div class="input-group">
-              <label for="domain">Domain</label>
-              <select name="domain" id="domain">
-                <option value="sport">Sport</option>
-                <option value="music">Music</option>
-                <option value="movies">Movies</option>
-                <option value="business">Business</option>
-                <option value="books">Books</option>
-              </select>
-              <!-- <input type="select" id="Domain"> -->
-            </div>
+          <a href="#InstagramPage">
+            <img src="../../../public/assets/icons/icons8-instagram-48.svg" alt="Instagram icon">
+          </a>
 
-            <div class="input-group">
-              <label for="context">Context</label>
-              <input type="text" id="context">
-            </div>
-
-            <div class="input-group">
-              <label for="country">Country</label>
-              <input type="text" id="country">
-            </div>
-
-            <div class="input-group">
-              <label for="given-on">Given on</label>
-              <input type="text" id="given-on">
-            </div>
-
-            <div class="input-group">
-              <label for="value">Value</label>
-              <input type="text" id="value">
-            </div>
-
-            <div class="input-group input-group--wide">
-              <label for="special-mentions">Special mentions</label>
-              <textarea name="special-mentions" id="special-mentions"></textarea>
-            </div>
-
-            <div class="input-group input-group--wide">
-              <label for="exchange-with">Exchange with</label>
-              <textarea name="exchange-with" id="exchange-with"></textarea>
-            </div>
-
-            <div class="input-group input-group--tags">
-              <label for="tags">Tags</label>
-              <input type="text" placeholder="New tag" id="tags">
-              <button>+</button>
-              <ul class="tag-list">
-                <li>
-                  <span class="tag">New tag</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="right-side">
-            <div class="autograph-upload">
-              <img src="../../../public/assets/image-default-filled.svg" alt="autograph image">
-              <input type="file" name="autograph" id="autograph">
-            </div>
-
-            <button type="submit">Save</button>
-          </div>
-        </form>
+          <a href="#TwitterPage">
+            <img src="../../../public/assets/icons/icons8-twitter-48.svg" alt="Twitter icon">
+          </a>
+        </div>
       </div>
 
+      <div class="authors">
+        <p>Authors: B&icirc;zu Dan-Alexandru & G&icirc;rbea Dumitru-Andrei</p>
+      </div>
     </div>
-  </div>
+  </footer>
   <script src="../../js/menu.js"></script>
 </body>
-</html>
 
+</html>

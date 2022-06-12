@@ -1,0 +1,29 @@
+.side-menu-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-rows: 60px 1fr 150px;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    ". sidemenu sidemenu main main main main main main main main ."
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.nav-menu {
+  grid-area: header;
+  width: 100%;
+}
+
+.side-menu {
+  grid-area: sidemenu;
+  width: 100%;
+}
+
+.main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}

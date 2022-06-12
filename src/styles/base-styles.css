@@ -160,7 +160,8 @@ body {
   --headings-font-family: "Helvetica", sans-serif;
   --base-font-size: 16px;
   --mobile-font-size: 14px;
-  --text-color: var(--grey-40);
+  --small-font-size: 12px;
+  --text-color: var(--black);
   --text-color-highlight: var(--black);
 
   /* ====== COLORS ====== */
@@ -179,23 +180,18 @@ body {
 
   /* ====== SHADOW ====== */
   --box-shadow: 1px 0 16px var(--grey-10);
+  --box-shadow-tiny: 1px 1px 6px var(--grey-10);
 
   /* ====== IMAGES ===== */
   --login-background-image: url("../../../public/assets/Fundal8.png");
   --signup-background-image: url("../../../public/assets/watermark-web-background.png");
   --mobil-background-image: url("../../../public/assets/watermark-mobil-background3.png");
-  --testing-cv: url(../../public/assets/watermark-web-background.png);
-
-
 
   /* ===== FONT FAMILY ====== */
-  --h1-font-family: "Caveat";
-  --p-left: "Eras Bold ITC";
-  --p-right: "Kalam";
-  --see-all-link: "Permanent Marker"
-
-
-
+  --Caveat-font-family: "Caveat";
+  --Eras-font-family: "Eras Bold ITC";
+  --Kalam-font-family: "Kalam";
+  --Permanent-Marker-font-family: "Permanent Marker"
 }
 
 

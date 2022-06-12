@@ -1,235 +1,95 @@
 body {
-    background-image: url(../../../public/assets/watermark-web-background.png);
+  background-image: url(../../../public/assets/watermark-web-background.png);
 }
 
 .main {
-    margin: 80px 15% 2% 15%;
-    padding: 1%;
+  margin: 80px 15% 2% 15%;
+  padding: 1%;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-family: var(--h1-font-family);
-    font-size: var(--h1-mobile-font-size);
-    background-color: white;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-family: var(--Caveat-font-family);
+  font-size: var(--h1-mobile-font-size);
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
 h2 {
-    font-size: var(--h2-mobile-font-size);
-    font-weight: lighter;
-    font-family: var(--p-left);
+  font-size: var(--h2-mobile-font-size);
+  font-weight: lighter;
+  font-family: var(--Eras-font-family);
 }
-
-.autograph-card {
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    display: block;
-    width: 100%;
-    background-color: white;
-    margin-bottom: 10px;
-}
-
-.autograph-card__header {
-    border-bottom: 1px;
-    border-bottom-color: black;
-    border-bottom-style: solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.autograph-card__body {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.autograph-image-wrapper {
-    border-right: 1px;
-    border-right-color: black;
-    border-right-style: solid;
-    width: 300px;
-    height: 300px;
-    align-self: center;
-}
-
-.celebrity-avatar {
-    display: inline;
-    position: absolute;
-    background-color: #f9f9f9;
-    /* min-width: 160px; */
-    border-radius: 50%;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    /* z-index: 1; */
-    margin: 10px 0px 0px 10px;
-}
-
-img.celebrity-avatar {
-    width: 50px;
-    height: 50px;
-    /* background-color: cyan; */
-    /* z-index: 2; */
-}
-
-.autograph-image {
-    width: 300px;
-    /* max-width: 100%; */
-    height: 300px;
-    /* background-color:blue ; */
-    /* z-index: 1; */
-}
-
-
-
-.autograph-details {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100% - 300px);
-    font-size: 120%;
-}
-
-.info-group {
-    display: flex;
-    flex-basis: 50%;
-    padding: 0px 5px 5px 0px;
-}
-
-
-.info-group--wide {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 5px 5px 0px;
-}
-
-textarea {
-    width: 100%;
-    height: auto;
-}
-
-label {
-    color: black;
-    text-decoration: underline;
-}
-
-.info-group--wide label {
-    padding-bottom: 5px;
-}
-
-.tag-list {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    border-top-width: 1px;
-    border-top-color: black;
-    border-top-style: solid;
-    flex-wrap: wrap;
-
-}
-
-.tag {
-    margin: 5px;
-    padding: 5px;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
-    ;
-    margin-right: 10px;
-}
-
-li {
-    list-style: none;
-}
-
-
-
-.autograph-details span {
-    color: var(--grey-100);
-    padding-left: 5px;
-}
-
-.tag-list {
-    color: var(--grey-100);
-}
-
 
 .pagination {
-    display: inline-block;
-    justify-content: center;
-    color:black;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+  display: inline-block;
+  justify-content: center;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: var(--grey-100);
-    font-size: larger
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: var(--grey-100);
+  font-size: larger
 }
 
 .pagination a.active {
-    background-color: var(--grey-60);
-    color: var(--grey-100);
+  background-color: var(--grey-60);
+  color: var(--grey-100);
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
-    color:black;
+  background-color: #ddd;
+  color: black;
 }
 
 
 @media only screen and (max-width: 768px) {
-    .autograph-card__body {
-        display: flex;
-        flex-direction: column;
-    }
+  .autograph-card__body {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .autograph-details {
-        width: 100%;
-    }
+  .autograph-details {
+    width: 100%;
+  }
 
-    .autograph-image {
-        width: 80%;
-        max-width: 100%;
-    }
+  .autograph-image {
+    width: 80%;
+    max-width: 100%;
+  }
 
-    .tag-list {
-        justify-content: center;
-    }
+  .tag-list {
+    justify-content: center;
+  }
 
-    .autograph-image-wrapper {
-        border-right-style: none;
-        display: flex;
-        justify-content: center;
-    }
+  .autograph-image-wrapper {
+    border-right-style: none;
+    display: flex;
+    justify-content: center;
+  }
 
-    textarea {
-        width: 90%;
-    }
+  textarea {
+    width: 90%;
+  }
 
-    h1 {
-        text-align: center;
-        margin: 10px;
-        margin-bottom: 30px;
-        padding: 10px;
-        font-family: var(--h1-font-family);
-        font-size: var(--h1-mobile-font-size);
+  h1 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: var(--Caveat-font-family);
+    font-size: var(--h1-mobile-font-size);
 
-    }
-
-
-
+  }
 }

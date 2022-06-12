@@ -1,0 +1,124 @@
+.autograph-card {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.autograph-card__header {
+  border-bottom: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.autograph-card__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.autograph-image-wrapper {
+  border-right: 1px;
+  border-right-color: black;
+  border-right-style: solid;
+  width: 300px;
+  height: 300px;
+  align-self: center;
+}
+
+.celebrity-avatar {
+  display: inline;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  margin: 10px 0px 0px 10px;
+}
+
+img.celebrity-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.autograph-image {
+  width: 300px;
+  height: 300px;
+}
+
+.autograph-details {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 300px);
+  font-size: 120%;
+}
+
+.info-group {
+  display: flex;
+  flex-basis: 50%;
+  padding: 0px 5px 5px 0px;
+}
+
+
+.info-group--wide {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+}
+
+.autograp-card label {
+  color: black;
+  text-decoration: underline;
+}
+
+.info-group--wide label {
+  padding-bottom: 5px;
+}
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.autograph-card .tag-list {
+  border-top-width: 1px;
+  border-top-color: black;
+  border-top-style: solid;
+  padding: 10px;
+}
+
+.tag {
+  padding: 5px 12px;
+  border-radius: 3px;
+  background-color: var(--grey-10);
+  box-shadow: var(--box-shadow-tiny);
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+.autograph-details span {
+  color: var(--grey-100);
+  padding-left: 5px;
+}
+
+.tag-list {
+  color: var(--grey-100);
+}
