@@ -185,6 +185,7 @@ body {
   /* ====== IMAGES ===== */
   --login-background-image: url("../../../public/assets/Fundal8.png");
   --signup-background-image: url("../../../public/assets/watermark-web-background.png");
+  --forgot-password-image: url("../../../public/assets/forgot_password_background.png");
   --mobil-background-image: url("../../../public/assets/watermark-mobil-background3.png");
 
   /* ===== FONT FAMILY ====== */
@@ -193,7 +194,7 @@ body {
   --Kalam-font-family: "Kalam";
   --Permanent-Marker-font-family: "Permanent Marker"
 }
-
+ 
 
 /* ====== DEFINE COMMON STYLES ====== */
 
