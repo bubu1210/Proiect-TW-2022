@@ -5,25 +5,50 @@
   row-gap: 20px;
   grid-template-rows: 60px 1fr 150px;
   grid-template-areas:
-    "header header header header header header header header header header header header"
+    "main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header"
     ". sidemenu sidemenu main main main main main main main main ."
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    "main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer";
 }
 
-.nav-menu {
-  grid-area: header;
-  width: 100%;
-}
 
-.side-menu {
+.side-menu-layout .side-menu {
   grid-area: sidemenu;
   width: 100%;
 }
 
-.main {
+.side-menu-layout .main {
   grid-area: main;
 }
 
-footer {
-  grid-area: footer;
+
+.side-menu-layout main-header {
+  grid-area: main-header;
+}
+
+.side-menu-layout main-footer {
+  grid-area: main-footer;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-rows: 60px 1fr 150px;
+  grid-template-areas:
+    "main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header main-header"
+    ". main main main main main main main main main main ."
+    "main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer main-footer";
+}
+
+.main-layout main-header {
+  grid-area: main-header;
+}
+
+.main-layout .main {
+  grid-area: main;
+}
+
+.main-layout main-footer {
+  grid-area: main-footer;
 }
