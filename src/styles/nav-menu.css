@@ -8,21 +8,9 @@
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--grey-100);
-  /* height: inherit; */
   width: -webkit-fill-available;
-  /* position: sticky;
-  top: 0;
-  left: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  background-color: var(--grey-100); */
   z-index: 100;
 }
-
-
 
 .nav-menu .logo-wrapper {
   display: flex;
@@ -32,6 +20,10 @@
 .nav-menu .logo-wrapper #logo {
   height: 50px;
   width: auto;
+}
+
+.nav-menu .logo-wrapper span {
+  color: var(--grey-10);
 }
 
 .searchbar-wrapper {

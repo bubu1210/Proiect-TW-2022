@@ -1,300 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../../../public/assets/favicons/favicon3.ico">
 
-  <link rel="stylesheet" href="../../styles/index.css">
-  <link rel="stylesheet" href="user-page.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../../../public/assets/favicons/favicon3.ico" />
+
+  <link rel="stylesheet" href="../../styles/index.css" />
+  <link rel="stylesheet" href="user-page.css" />
+  <script src="../../js/templates.js" type="text/javascript"></script>
+
   <title>User page</title>
 </head>
-<body>
+
+<body class="side-menu-layout">
   <!-- NAV MENU -->
-  <div class="nav-menu">
-    <div class="logo-wrapper">
-      <img id="logo" src="../../../public/assets/logo-small.png" alt="AuCo - logo">
-      <span>Autograph Collector</span>
+  <main-header>    
+  </main-header>
+
+
+  <!-- SIDE MENU -->
+  <div class="side-menu">
+    <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar" />
+    <p class="user-description">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Nesciunt est fugiat dolor impedit deleniti aliquid eaque quas
+      officiis, vero consectetur quod ducimus vel at dignissimos eos
+      assumenda autem accusamus enim.
+    </p>
+    <nav class="side-menu__nav">
+      <a class="side-menu__nav__item current" href="#">
+        My autographs
+      </a>
+
+      <a class="side-menu__nav__item" href="#"> Add autograph </a>
+
+      <a class="side-menu__nav__item" href="#"> My info </a>
+
+      <a class="side-menu__nav__item" href="#"> Generate raport </a>
+
+      <a class="side-menu__nav__item" href="#"> Delete account </a>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="autograph-card">
+      <div class="autograph-card__header">
+        <h2>@User_name</h2>
+        <time datetime="2022-04-09">01.0.1.2022</time>
+      </div>
+
+      <div class="autograph-card__body">
+        <div class="autograph-image-wrapper">
+
+          <!-- <img class="celebrity-avatar" src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" >
+          <img class="autograph-image" src="../../../public/assets/image-default.svg" alt="Image of the autograph" width="300" height="300" > -->
+
+          <img class="celebrity-avatar"
+            src="../../../public/assets/celebrities/celebrity-autographs-33-5b277be0e7b82__700.png"
+            alt="Avatar for the celebrity">
+          <img class="autograph-image" src="../../../public/assets/autographs/autograph (15).jpg"
+            alt="Image of the autograph">
+
+
+        </div>
+
+        <div class="autograph-details">
+          <div class="info-group">
+            <label for="celebrity-name">From:</label>
+            <span id="celebrity-name">Elvis Presley</span>
+          </div>
+
+          <div class="info-group">
+            <label for="domain">Domain:</label>
+            <span id="domain">Music</span>
+          </div>
+
+          <div class="info-group">
+            <label for="context">Context:</label>
+            <span id="context">Concert</span>
+          </div>
+
+          <div class="info-group">
+            <label for="country">Country:</label>
+            <span id="country">England</span>
+          </div>
+
+          <div class="info-group">
+            <label for="give-on">Given on:</label>
+            <span id="given-on">Paper</span>
+          </div>
+
+          <div class="info-group">
+            <label for="value">Value:</label>
+            <span id="value">79.99$</span>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="special-mentions">Special mentions:</label>
+            <textarea id="special-mentions" readonly>Don't keep in humidity</textarea>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="exchange">Exchanging with autographs from:</label>
+            <ul id="exchange">
+              <li>
+                <span>Cristiano Ronaldo</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="info-group--wide">
+          <ul class="tag-list">
+            <li class="tag">
+              <span>Music</span>
+            </li>
+            <li class="tag">
+              <span>Football</span>
+            </li>
+            <li class="tag">
+              <span>Paper</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="searchbar-wrapper">
-      <img id="search-icon" src="../../../public/assets/icons/search_black_24dp.svg" alt="Search icon">
-      <input type="text" name="searchbar" id="searchbar">
+    <div class="autograph-card">
+      <div class="autograph-card__header">
+        <h2>@User_name</h2>
+        <time datetime="2022-04-09">01.0.1.2022</time>
+      </div>
+
+      <div class="autograph-card__body">
+        <div class="autograph-image-wrapper">
+
+          <!-- <img class="celebrity-avatar" src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" >
+          <img class="autograph-image" src="../../../public/assets/image-default.svg" alt="Image of the autograph" width="300" height="300" > -->
+
+          <img class="celebrity-avatar"
+            src="../../../public/assets/celebrities/celebrity-autographs-33-5b277be0e7b82__700.png"
+            alt="Avatar for the celebrity">
+          <img class="autograph-image" src="../../../public/assets/autographs/autograph (15).jpg"
+            alt="Image of the autograph">
+
+
+        </div>
+
+        <div class="autograph-details">
+          <div class="info-group">
+            <label for="celebrity-name">From:</label>
+            <span id="celebrity-name">Elvis Presley</span>
+          </div>
+
+          <div class="info-group">
+            <label for="domain">Domain:</label>
+            <span id="domain">Music</span>
+          </div>
+
+          <div class="info-group">
+            <label for="context">Context:</label>
+            <span id="context">Concert</span>
+          </div>
+
+          <div class="info-group">
+            <label for="country">Country:</label>
+            <span id="country">England</span>
+          </div>
+
+          <div class="info-group">
+            <label for="give-on">Given on:</label>
+            <span id="given-on">Paper</span>
+          </div>
+
+          <div class="info-group">
+            <label for="value">Value:</label>
+            <span id="value">79.99$</span>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="special-mentions">Special mentions:</label>
+            <textarea id="special-mentions" readonly>Don't keep in humidity</textarea>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="exchange">Exchanging with autographs from:</label>
+            <ul id="exchange">
+              <li>
+                <span>Cristiano Ronaldo</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="info-group--wide">
+          <ul class="tag-list">
+            <li class="tag">
+              <span>Music</span>
+            </li>
+            <li class="tag">
+              <span>Football</span>
+            </li>
+            <li class="tag">
+              <span>Paper</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="profile-menu-wrapper">
-      <a href="../Login/login.html" id="login-btn">Login</a>
+    <div class="autograph-card">
+      <div class="autograph-card__header">
+        <h2>@User_name</h2>
+        <time datetime="2022-04-09">01.0.1.2022</time>
+      </div>
 
-      <div class="profile-menu">
-        <img id="user-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
-        <nav class="profile-menu__dropdown">
-          <a href="">My profile</a>
-          <a href="">Add autograph</a>
-          <a href="">Theme</a>
-          <a href="">Log out</a>
-        </nav>
+      <div class="autograph-card__body">
+        <div class="autograph-image-wrapper">
+
+          <!-- <img class="celebrity-avatar" src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" >
+          <img class="autograph-image" src="../../../public/assets/image-default.svg" alt="Image of the autograph" width="300" height="300" > -->
+
+          <img class="celebrity-avatar"
+            src="../../../public/assets/celebrities/celebrity-autographs-33-5b277be0e7b82__700.png"
+            alt="Avatar for the celebrity">
+          <img class="autograph-image" src="../../../public/assets/autographs/autograph (15).jpg"
+            alt="Image of the autograph">
+
+
+        </div>
+
+        <div class="autograph-details">
+          <div class="info-group">
+            <label for="celebrity-name">From:</label>
+            <span id="celebrity-name">Elvis Presley</span>
+          </div>
+
+          <div class="info-group">
+            <label for="domain">Domain:</label>
+            <span id="domain">Music</span>
+          </div>
+
+          <div class="info-group">
+            <label for="context">Context:</label>
+            <span id="context">Concert</span>
+          </div>
+
+          <div class="info-group">
+            <label for="country">Country:</label>
+            <span id="country">England</span>
+          </div>
+
+          <div class="info-group">
+            <label for="give-on">Given on:</label>
+            <span id="given-on">Paper</span>
+          </div>
+
+          <div class="info-group">
+            <label for="value">Value:</label>
+            <span id="value">79.99$</span>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="special-mentions">Special mentions:</label>
+            <textarea id="special-mentions" readonly>Don't keep in humidity</textarea>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="exchange">Exchanging with autographs from:</label>
+            <ul id="exchange">
+              <li>
+                <span>Cristiano Ronaldo</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="info-group--wide">
+          <ul class="tag-list">
+            <li class="tag">
+              <span>Music</span>
+            </li>
+            <li class="tag">
+              <span>Football</span>
+            </li>
+            <li class="tag">
+              <span>Paper</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="autograph-card">
+      <div class="autograph-card__header">
+        <h2>@User_name</h2>
+        <time datetime="2022-04-09">01.0.1.2022</time>
+      </div>
+
+      <div class="autograph-card__body">
+        <div class="autograph-image-wrapper">
+          <img class="celebrity-avatar"
+            src="../../../public/assets/celebrities/celebrity-autographs-33-5b277be0e7b82__700.png"
+            alt="Avatar for the celebrity">
+          <img class="autograph-image" src="../../../public/assets/autographs/autograph (15).jpg"
+            alt="Image of the autograph">
+        </div>
+
+        <div class="autograph-details">
+          <div class="info-group">
+            <label for="celebrity-name">From:</label>
+            <span id="celebrity-name">Elvis Presley</span>
+          </div>
+
+          <div class="info-group">
+            <label for="domain">Domain:</label>
+            <span id="domain">Music</span>
+          </div>
+
+          <div class="info-group">
+            <label for="context">Context:</label>
+            <span id="context">Concert</span>
+          </div>
+
+          <div class="info-group">
+            <label for="country">Country:</label>
+            <span id="country">England</span>
+          </div>
+
+          <div class="info-group">
+            <label for="give-on">Given on:</label>
+            <span id="given-on">Paper</span>
+          </div>
+
+          <div class="info-group">
+            <label for="value">Value:</label>
+            <span id="value">79.99$</span>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="special-mentions">Special mentions:</label>
+            <textarea id="special-mentions" readonly>Don't keep in humidity</textarea>
+          </div>
+
+          <div class="info-group--wide">
+            <label for="exchange">Exchanging with autographs from:</label>
+            <ul id="exchange">
+              <li>
+                <span>Cristiano Ronaldo</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="info-group--wide">
+          <ul class="tag-list">
+            <li class="tag">
+              <span>Music</span>
+            </li>
+            <li class="tag">
+              <span>Football</span>
+            </li>
+            <li class="tag">
+              <span>Paper</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="content-layout">
-    <!-- SIDE MENU -->
-    <div class="side-menu">
-      <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
-      <p class="user-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt est fugiat dolor impedit deleniti aliquid
-        eaque quas officiis, vero consectetur quod ducimus vel at dignissimos eos assumenda autem accusamus enim.
-      </p>
-      <nav class="side-menu__nav">
-        <a class="side-menu__nav__item current" href="#">
-          My autographs
-        </a>
-
-        <a class="side-menu__nav__item" href="#">
-          Add autograph
-        </a>
-
-        <a class="side-menu__nav__item" href="#">
-          My info
-        </a>
-
-        <a class="side-menu__nav__item" href="#">
-          Generate raport
-        </a>
-
-        <a class="side-menu__nav__item" href="#">
-          Delete account
-        </a>
-      </nav>
-    </div>
-
-    <div class="main">
-      <div class="autograph-card">
-        <div class="autograph-card__header">
-          <h2>@User name</h2>
-          <time datetime="2022-04-09">date</time>
-        </div>
-
-        <div class="autograph-card__body">
-          <div class="autograph-image-wrapper">
-            <img src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" class="celebrity-avatar">
-            <img src="../../../public/assets/image-default.svg" alt="Image of the autograph" class="autograph-image">
-          </div>
-
-          <div class="autograph-details">
-            <div class="info-group">
-              <label for="celebrity-name">From:</label>
-              <span id="celebrity-name">Lionel Messi</span>
-            </div>
-
-            <div class="info-group">
-              <label for="domain">Domain:</label>
-              <span id="domain">Sport</span>
-            </div>
-
-            <div class="info-group">
-              <label for="context">Context:</label>
-              <span id="context">Football match</span>
-            </div>
-
-            <div class="info-group">
-              <label for="country">Country:</label>
-              <span id="country">Spain</span>
-            </div>
-
-            <div class="info-group">
-              <label for="give-on">Given on:</label>
-              <span id="given-on">T-Shirt</span>
-            </div>
-
-            <div class="info-group">
-              <label for="value">Value:</label>
-              <span id="value">79.99$</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="special-mentions">Special mentions:</label>
-              <span id="special-mentions">Don't wash</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="exchange">Exchanging with autographs from:</label>
-              <ul id="exchange">
-                <li>
-                  <span>Cristiano Ronaldo</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-group--wide">
-              <ul class="tag-list">
-                <li class="tag">
-                  <span>Sport</span>
-                </li>
-                <li class="tag">
-                  <span>Football</span>
-                </li>
-                <li class="tag">
-                  <span>T-Shirt</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="autograph-card">
-        <div class="autograph-card__header">
-          <h2>@User name</h2>
-          <time datetime="2022-04-09">date</time>
-        </div>
-
-        <div class="autograph-card__body">
-          <div class="autograph-image-wrapper">
-            <img src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" class="celebrity-avatar">
-            <img src="../../../public/assets/image-default.svg" alt="Image of the autograph" class="autograph-image">
-          </div>
-
-          <div class="autograph-details">
-            <div class="info-group">
-              <label for="celebrity-name">From:</label>
-              <span id="celebrity-name">Lionel Messi</span>
-            </div>
-
-            <div class="info-group">
-              <label for="domain">Domain:</label>
-              <span id="domain">Sport</span>
-            </div>
-
-            <div class="info-group">
-              <label for="context">Context:</label>
-              <span id="context">Football match</span>
-            </div>
-
-            <div class="info-group">
-              <label for="country">Country:</label>
-              <span id="country">Spain</span>
-            </div>
-
-            <div class="info-group">
-              <label for="give-on">Given on:</label>
-              <span id="given-on">T-Shirt</span>
-            </div>
-
-            <div class="info-group">
-              <label for="value">Value:</label>
-              <span id="value">79.99$</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="special-mentions">Special mentions:</label>
-              <span id="special-mentions">Don't wash</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="exchange">Exchanging with autographs from:</label>
-              <ul id="exchange">
-                <li>
-                  <span>Cristiano Ronaldo</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-group--wide">
-              <ul class="tag-list">
-                <li class="tag">
-                  <span>Sport</span>
-                </li>
-                <li class="tag">
-                  <span>Football</span>
-                </li>
-                <li class="tag">
-                  <span>T-Shirt</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="autograph-card">
-        <div class="autograph-card__header">
-          <h2>@User name</h2>
-          <time datetime="2022-04-09">date</time>
-        </div>
-
-        <div class="autograph-card__body">
-          <div class="autograph-image-wrapper">
-            <img src="../../../public/assets/avatar-default.svg" alt="Avatar for the celebrity" class="celebrity-avatar">
-            <img src="../../../public/assets/image-default.svg" alt="Image of the autograph" class="autograph-image">
-          </div>
-
-          <div class="autograph-details">
-            <div class="info-group">
-              <label for="celebrity-name">From:</label>
-              <span id="celebrity-name">Lionel Messi</span>
-            </div>
-
-            <div class="info-group">
-              <label for="domain">Domain:</label>
-              <span id="domain">Sport</span>
-            </div>
-
-            <div class="info-group">
-              <label for="context">Context:</label>
-              <span id="context">Football match</span>
-            </div>
-
-            <div class="info-group">
-              <label for="country">Country:</label>
-              <span id="country">Spain</span>
-            </div>
-
-            <div class="info-group">
-              <label for="give-on">Given on:</label>
-              <span id="given-on">T-Shirt</span>
-            </div>
-
-            <div class="info-group">
-              <label for="value">Value:</label>
-              <span id="value">79.99$</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="special-mentions">Special mentions:</label>
-              <span id="special-mentions">Don't wash</span>
-            </div>
-
-            <div class="info-group--wide">
-              <label for="exchange">Exchanging with autographs from:</label>
-              <ul id="exchange">
-                <li>
-                  <span>Cristiano Ronaldo</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="info-group--wide">
-              <ul class="tag-list">
-                <li class="tag">
-                  <span>Sport</span>
-                </li>
-                <li class="tag">
-                  <span>Football</span>
-                </li>
-                <li class="tag">
-                  <span>T-Shirt</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <!-- Footer -->
+  <main-footer>
+  </main-footer>
   <script src="../../js/menu.js"></script>
 </body>
-</html>
 
+</html>

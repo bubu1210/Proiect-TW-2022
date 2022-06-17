@@ -32,6 +32,7 @@ form .left-side {
 .input-group label,
 .input-group--wide label {
   display: block;
+  margin-bottom: 3px;
 }
 
 .input-group input,
@@ -64,12 +65,23 @@ form .right-side > * {
   margin: 0 auto;
 }
 
+/**
+ * ============================================
+ * > MOBILE
+ * ============================================
+ */
 @media screen and (min-width: 768px) {
   .add-autograph {
     margin-top: 0;
   }
 }
 
+
+/**
+ * ============================================
+ * > TABLET
+ * ============================================
+ */
 @media screen and (min-width: 992px) {
   .add-autograph {
     margin-top: 0;
@@ -88,6 +100,11 @@ form .right-side > * {
   }
 }
 
+/**
+ * ============================================
+ * > DESKTOP
+ * ============================================
+ */
 @media screen and (min-width: 1440px) {
   .left-side {
     display: flex;
