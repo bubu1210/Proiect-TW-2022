@@ -1,5 +1,7 @@
 .mySlides {
     display: inline-block;
+    margin: 20px;
+    align-content: space-between;
 }
 
 img {
@@ -8,9 +10,12 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+    display: flex;
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Caption text */
@@ -101,4 +106,17 @@ img {
   .prev:hover, .next:hover {
     background-color: rgba(180, 180, 180, 0.3);
   }
+
+
+  .prev:disabled, .next:disabled {
+    opacity: 0.5;   
+  }
+
+  .prev:disabled:hover, .next:disabled:hover {
+    background: transparent;
+  }
   
+
+  .activeSlide {
+    width: 45% !important;
+  }

@@ -1,10 +1,11 @@
 let slideIndex = 0;
 
-let slidesCount = 4;
+let slidesCount = 0;
 
 let visibleSlides = 3;
 
 initSlides(visibleSlides);
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n, visibleSlides);
@@ -25,7 +26,7 @@ function showSlides(n, visibleSlides) {
     let nextBtn = slidesShow.querySelector(".next");
     let prevBtn = slidesShow.querySelector(".prev");
 
-    if (n == slides.length - 1) {
+    if (n == slidesCount) {
         nextBtn.setAttribute("disabled", true);
     }
     else {
@@ -65,20 +66,58 @@ function showSlides(n, visibleSlides) {
         }
     }
 
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex].style.display = "inline-block";
+
+
+    // remove active slide class from previous slide
+    if ( slides[slideIndex - 1] && slides[slideIndex - 1].classList.contains("activeSlide") ) {
+        slides[slideIndex - 1].classList.remove("activeSlide");
+        
+    }
+
+    // remove active slide class from previous slide
+    if ( slides[slideIndex + 1] && slides[slideIndex + 1].classList.contains("activeSlide") ) {
+        slides[slideIndex + 1].classList.remove("activeSlide");
+        
+    }
+    
+
+    slides[slideIndex].classList.add("activeSlide");
+
+
 
 }
 
 
 function initSlides(visibleSlides) {
+
     const slideWidth = (80 / visibleSlides).toFixed(2);
-    slideIndex = (slidesCount / 2) - 1;
+
     let slidesShow = document.querySelector(".slideshow-container");
     let slides = slidesShow.getElementsByClassName("mySlides");
     Array.from(slides).forEach(slide => {
         slide.style.width = slideWidth + "%";
         // console.log(slide);
     });
+
+    slidesCount = slides.length ;
+    slideIndex = 2 ;
+   
+
+    let auxFirstSlide = document.createElement("div");
+    auxFirstSlide.classList.add("mySlides");
+    auxFirstSlide.style.width = slideWidth + "%";
+
+    let auxLastSlide = document.createElement("div");
+    auxLastSlide.classList.add("mySlides");
+    auxLastSlide.style.width = slideWidth + "%";
+
+    slidesShow.insertAdjacentElement("afterbegin", auxFirstSlide);
+    slidesShow.insertAdjacentElement("beforeend", auxLastSlide);
+
+
+
+
 
     showSlides(slideIndex, visibleSlides);
 
