@@ -185,7 +185,9 @@ body {
   /* ====== IMAGES ===== */
   --login-background-image: url("../../../public/assets/Fundal8.png");
   --signup-background-image: url("../../../public/assets/watermark-web-background.png");
+  --forgot-password-image: url("../../../public/assets/forgot_password_background.png");
   --mobil-background-image: url("../../../public/assets/watermark-mobil-background3.png");
+  --mobil-background-image: url("../pages/Login/login.html");
 
   /* ===== FONT FAMILY ====== */
   --Caveat-font-family: "Caveat";
@@ -193,7 +195,7 @@ body {
   --Kalam-font-family: "Kalam";
   --Permanent-Marker-font-family: "Permanent Marker"
 }
-
+ 
 
 /* ====== DEFINE COMMON STYLES ====== */
 
@@ -213,7 +215,12 @@ input:focus {
   box-shadow: none;
 }
 
-.content-layout {
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* .content-layout {
   padding: 30px 20px 0;
   margin: 0 auto;
   max-width: 100%;
@@ -268,5 +275,5 @@ input:focus {
   .content-layout {
     width: var(--xl);
   }
-}
+} */
 
