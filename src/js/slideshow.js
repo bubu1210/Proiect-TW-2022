@@ -1,32 +1,33 @@
-let slideIndex = 0;
-
-let slidesCount = 0;
-
 let visibleSlides = 3;
 
 initSlides(visibleSlides);
 
 
-function plusSlides(n) {
-    showSlides(slideIndex += n, visibleSlides);
+
+function plusSlides(n, carousel) {
+    // showSlides(slideIndex += n, visibleSlides, carousel);
+    return function(e) {
+        let slideIndex = parseInt(carousel.dataset.slideIndex) ;
+        carousel.dataset.slideIndex = slideIndex + n;
+        showSlides(visibleSlides, carousel);
+    }
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n, visibleSlides);
-}
 
-function showSlides(n, visibleSlides) {
-    let slidesShow = document.querySelector(".slideshow-container");
+function showSlides(visibleSlides, carousel) {
+    const slideIndex = parseInt(carousel.dataset.slideIndex);
 
 
     let i;
-    let slides = slidesShow.getElementsByClassName("mySlides");
+    let slides = carousel.getElementsByClassName("mySlides");
+
+    const slidesCount = slides.length;
 
 
-    let nextBtn = slidesShow.querySelector(".next");
-    let prevBtn = slidesShow.querySelector(".prev");
+    let nextBtn = carousel.querySelector(".next");
+    let prevBtn = carousel.querySelector(".prev");
 
-    if (n == slidesCount) {
+    if (slideIndex == slidesCount - 2) {
         nextBtn.setAttribute("disabled", true);
     }
     else {
@@ -35,7 +36,7 @@ function showSlides(n, visibleSlides) {
         }
     }
 
-    if (n == 0) {
+    if (slideIndex == 1) {
         prevBtn.setAttribute("disabled", true);
     }
     else {
@@ -52,7 +53,7 @@ function showSlides(n, visibleSlides) {
 
     let visibleLimitSlides = Math.min(slideIndex + Math.ceil(visibleSlides / 2), slides.length);
     // visible Slides 
-    console.log(slideIndex - Math.floor(visibleSlides / 2))
+
     for (i = slideIndex - Math.floor(visibleSlides / 2); i < visibleLimitSlides; i++) {
         slides[i].style.display = "inline-block";
     }
@@ -70,17 +71,18 @@ function showSlides(n, visibleSlides) {
 
 
     // remove active slide class from previous slide
-    if ( slides[slideIndex - 1] && slides[slideIndex - 1].classList.contains("activeSlide") ) {
+    if (slides[slideIndex - 1] && slides[slideIndex - 1].classList.contains("activeSlide")) {
         slides[slideIndex - 1].classList.remove("activeSlide");
-        
+
     }
 
     // remove active slide class from previous slide
-    if ( slides[slideIndex + 1] && slides[slideIndex + 1].classList.contains("activeSlide") ) {
+    if (slides[slideIndex + 1] && slides[slideIndex + 1].classList.contains("activeSlide")) {
         slides[slideIndex + 1].classList.remove("activeSlide");
-        
+
     }
-    
+
+
 
     slides[slideIndex].classList.add("activeSlide");
 
@@ -90,38 +92,53 @@ function showSlides(n, visibleSlides) {
 
 
 function initSlides(visibleSlides) {
+    let slidesShow = document.querySelectorAll(".slideshow-container");
 
-    const slideWidth = (80 / visibleSlides).toFixed(2);
+    Array.from(slidesShow).forEach(carousel => {
+        let slideIndex = 2;
+        carousel.dataset.slideIndex = slideIndex;
 
-    let slidesShow = document.querySelector(".slideshow-container");
-    let slides = slidesShow.getElementsByClassName("mySlides");
-    Array.from(slides).forEach(slide => {
-        slide.style.width = slideWidth + "%";
-        // console.log(slide);
+        let slidesCount;
+
+        const slideWidth = (80 / visibleSlides).toFixed(2);
+
+        let slides = carousel.getElementsByClassName("mySlides");
+        Array.from(slides).forEach(slide => {
+            slide.style.width = slideWidth + "%";
+
+        });
+
+        slidesCount = slides.length;
+
+
+
+        let auxFirstSlide = document.createElement("div");
+        auxFirstSlide.classList.add("mySlides");
+        auxFirstSlide.style.width = slideWidth + "%";
+
+        let auxLastSlide = document.createElement("div");
+        auxLastSlide.classList.add("mySlides");
+        auxLastSlide.style.width = slideWidth + "%";
+
+        carousel.insertAdjacentElement("afterbegin", auxFirstSlide);
+        carousel.insertAdjacentElement("beforeend", auxLastSlide);
+
+        let prevButton = carousel.querySelector("button.prev");
+        let nextButton = carousel.querySelector("button.next");
+
+        // prevButton.addEventListener("click", incrementSlides(-1, slideIndex, carousel));
+        // nextButton.addEventListener("click", incrementSlides( 1, slideIndex, carousel));
+
+        prevButton.addEventListener("click", plusSlides( -1, carousel));
+        nextButton.addEventListener("click", plusSlides( +1, carousel));
+
+        showSlides(visibleSlides, carousel);
+
     });
 
-    slidesCount = slides.length ;
-    slideIndex = 2 ;
-   
-
-    let auxFirstSlide = document.createElement("div");
-    auxFirstSlide.classList.add("mySlides");
-    auxFirstSlide.style.width = slideWidth + "%";
-
-    let auxLastSlide = document.createElement("div");
-    auxLastSlide.classList.add("mySlides");
-    auxLastSlide.style.width = slideWidth + "%";
-
-    slidesShow.insertAdjacentElement("afterbegin", auxFirstSlide);
-    slidesShow.insertAdjacentElement("beforeend", auxLastSlide);
-
-
-
-
-
-    showSlides(slideIndex, visibleSlides);
-
 }
+
+
 
 
 

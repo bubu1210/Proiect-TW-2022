@@ -76,7 +76,9 @@ h2 {
   .autograph-image-wrapper {
     border-right-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-content: center;
+}
   }
 
   textarea {

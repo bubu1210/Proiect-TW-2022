@@ -3,8 +3,10 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <div class="nav-menu">
         <div class="logo-wrapper">
-          <img id="logo" src="../../../public/assets/logo-small.png" alt="AuCo - logo">
-          <span>Autograph Collector</span>
+          <a href="../Home/home.html">
+            <img id="logo" src="../../../public/assets/logo-small.png" alt="AuCo - logo">
+            <span>Autograph Collector</span>
+          </a>
         </div>
     
         <div class="searchbar-wrapper">
