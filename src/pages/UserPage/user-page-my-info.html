@@ -8,7 +8,7 @@
   <link rel="icon" type="image/x-icon" href="../../../public/assets/favicons/favicon3.ico">
 
   <link rel="stylesheet" href="../../styles/index.css">
-  <link rel="stylesheet" href="user-page-add-autograph.css">
+  <link rel="stylesheet" href="user-page-my-info.css">
   <title>User page</title>
 </head>
 
@@ -31,8 +31,8 @@
       <div class="profile-menu">
         <img id="user-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
         <nav class="profile-menu__dropdown">
-          <a href="">My profile</a>
-          <a href="">Add autograph</a>
+          <a href="/src/pages/UserPage/user-page.html">My profile</a>
+          <a href="/src/pages/UserPage/user-page-add-autograph.html">Add autograph</a>
           <a href="">Theme</a>
           <a href="">Log out</a>
         </nav>
@@ -72,8 +72,8 @@
 
   <div class="main">
 
-    <div class="add-autograph">
-      <form>
+    <div class="my-info">
+      <form class="my-info__form">
         <div class="left-side">
           <div class="input-group">
             <label for="from">From</label>
@@ -81,66 +81,48 @@
           </div>
 
           <div class="input-group">
-            <label for="domain">Domain</label>
-            <select name="domain" id="domain">
-              <option value="sport">Sport</option>
-              <option value="music">Music</option>
-              <option value="movies">Movies</option>
-              <option value="business">Business</option>
-              <option value="books">Books</option>
-            </select>
+            <label for="username">Username</label>
+            <input type="text" id="username">
           </div>
 
           <div class="input-group">
-            <label for="context">Context</label>
-            <input type="text" id="context">
-          </div>
-
-          <div class="input-group">
-            <label for="country">Country</label>
-            <input type="text" id="country">
-          </div>
-
-          <div class="input-group">
-            <label for="given-on">Given on</label>
-            <input type="text" id="given-on">
-          </div>
-
-          <div class="input-group">
-            <label for="value">Value</label>
-            <input type="text" id="value">
-          </div>
-
-          <div class="input-group input-group--wide">
-            <label for="special-mentions">Special mentions</label>
-            <textarea name="special-mentions" id="special-mentions"></textarea>
-          </div>
-
-          <div class="input-group input-group--wide">
-            <label for="exchange-with">Exchange with</label>
-            <textarea name="exchange-with" id="exchange-with"></textarea>
-          </div>
-
-          <div class="input-group input-group--tags">
-            <label for="tags">Tags</label>
-            <input type="text" placeholder="New tag" id="tags">
-            <button>+</button>
-            <ul class="tag-list">
-              <li class="tag">
-                <span>New tag</span>
-              </li>
-            </ul>
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail">
           </div>
         </div>
 
         <div class="right-side">
-          <div class="autograph-upload">
-            <img src="../../../public/assets/image-default-filled.svg" alt="autograph image">
-            <input type="file" name="autograph" id="autograph">
+          <div class="input-group input-group--wide">
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+        </div>
+
+        <div class="break"></div>
+        <button type="submit">Save</button>
+      </form>
+
+      <h1>Change password</h1>
+      <form class="my-info__change-passowrd">
+        <div class="left-side">
+          <div class="input-group">
+            <label for="current-password">Current password</label>
+            <input type="password" id="current-password">
           </div>
 
-          <button type="submit">Save</button>
+          <div class="input-group">
+            <label for="new-password">New password</label>
+            <input type="password" id="new-password">
+          </div>
+
+          <div class="input-group">
+            <label for="confirm-password">Confirm new password</label>
+            <input type="password" id="confirm-password">
+          </div>
         </div>
+
+        <div class="break"></div>
+        <button type="submit">Change password</button>
       </form>
     </div>
 
