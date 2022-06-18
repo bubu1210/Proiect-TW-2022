@@ -171,8 +171,8 @@ body {
   --grey-80: rgba(80, 80, 80, 1);
   --grey-60: rgba(100, 100, 100, 1);
   --grey-40: rgba(120, 120, 120, 1);
-  --grey-20: rgba(140, 140, 140, 1);
-  --grey-10: rgba(180, 180, 180, 1);
+  --grey-20: rgba(140, 140, 140, .6);
+  --grey-10: rgba(180, 180, 180, .3);
   --grey-0: rgba(200, 200, 200, .1);
 
   /* ====== DIMENSIONS ====== */
@@ -195,7 +195,6 @@ body {
   --Kalam-font-family: "Kalam";
   --Permanent-Marker-font-family: "Permanent Marker"
 }
- 
 
 /* ====== DEFINE COMMON STYLES ====== */
 
@@ -218,62 +217,11 @@ input:focus {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
-/* .content-layout {
-  padding: 30px 20px 0;
-  margin: 0 auto;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
+button:hover {
+  box-shadow: var(--box-shadow);
 }
 
-@media only screen and (max-width: 600px) {
-  .content-layout {
-    width: var(--w-sm);
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .content-layout {
-    width: var(--w-md);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .content-layout {
-    flex-direction: row;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    margin-left: 2rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .content-layout {
-    width: var(--w-lg);
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .content-layout {
-    width: var(--w-xl);
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  .content-layout {
-    width: var(--w-xxl);
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .content-layout {
-    width: var(--xl);
-  }
-} */
 

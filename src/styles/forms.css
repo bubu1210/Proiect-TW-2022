@@ -29,8 +29,8 @@ form.custom-form .icon-input input::placeholder {
 }
 
 form.custom-form .email-input::before,
-form.custom-form .password-input::before, 
-form.custom-form .confirm-password-input::before, 
+form.custom-form .password-input::before,
+form.custom-form .confirm-password-input::before,
 form.custom-form .username-input::before {
   content: "";
   display: block;
@@ -75,4 +75,10 @@ form.custom-form button[type="submit"] {
   background-color: var(--grey-20);
   font-weight: 600;
   color: var(--white);
+}
+
+form button[type="submit"] {
+  background-color: var(--grey-10);
+  padding: 7px 20px;
+  border-radius: var(--border-radius);
 }

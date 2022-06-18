@@ -35,10 +35,14 @@
   font-weight: bold;
 }
 
+.side-menu__nav .side-menu__nav__item:hover {
+  box-shadow: var(--box-shadow);
+}
+
 .side-menu__nav .side-menu__nav__item:last-of-type {
   margin-bottom: 0;
 }
 
 .side-menu__nav .side-menu__nav__item.current {
-  border: -2px solid var(--black);
+  background-color: var(--grey-20);
 }

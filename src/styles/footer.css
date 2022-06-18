@@ -29,6 +29,7 @@ footer {
 
 .social-media {
   display: block;
+  padding-bottom: 5px;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--grey-40);
 }
@@ -54,7 +55,7 @@ footer {
 
 .social-media-icons-wrapper img {
   display: inline;
-  width: 55px;
+  width: 40px;
   height: auto;
 }
 

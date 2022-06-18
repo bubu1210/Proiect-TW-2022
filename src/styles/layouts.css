@@ -11,7 +11,7 @@
 }
 
 
-.side-menu-layout .side-menu {
+.side-menu-layout side-menu {
   grid-area: sidemenu;
   width: 100%;
 }

@@ -17,6 +17,10 @@ form .right-side {
 }
 
 form .right-side {
+  padding-top: 0;
+}
+
+form .right-side {
   flex-grow: 1;
 }
 
@@ -88,6 +92,10 @@ h1 {
   .my-info > form {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  form .right-side {
+    padding-top: 30px;
   }
 
   form .left-side > *,
