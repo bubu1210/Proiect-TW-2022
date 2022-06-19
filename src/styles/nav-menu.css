@@ -106,3 +106,7 @@
 .profile-menu__dropdown a:not(:last-of-type) {
   border-bottom: 1px solid var(--black);
 }
+
+.display-username span {
+  color: red;
+}
