@@ -15,6 +15,7 @@
 .nav-menu .logo-wrapper {
   display: flex;
   align-items: center;
+  font-family: var(--Permanent-Marker-font-family);
 }
 
 .nav-menu .logo-wrapper #logo {
