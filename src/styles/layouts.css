@@ -1,4 +1,4 @@
-.side-menu-layout {
+/* .side-menu-layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
@@ -11,7 +11,7 @@
 }
 
 
-.side-menu-layout .side-menu {
+.side-menu-layout side-menu {
   grid-area: sidemenu;
   width: 100%;
 }
@@ -27,7 +27,7 @@
 
 .side-menu-layout main-footer {
   grid-area: main-footer;
-}
+} */
 
 .main-layout {
   display: grid;

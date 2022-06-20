@@ -89,7 +89,7 @@ textarea {
 .tag-list {
   display: flex;
   flex-direction: row;
-  padding: 10px 0px;
+  padding-top: 10px;
   flex-wrap: wrap;
 }
 
@@ -101,7 +101,7 @@ textarea {
 }
 
 .tag {
-  padding: 5px 12px;
+  padding: 5px 15px;
   border-radius: 3px;
   background-color: var(--grey-10);
   box-shadow: var(--box-shadow-tiny);

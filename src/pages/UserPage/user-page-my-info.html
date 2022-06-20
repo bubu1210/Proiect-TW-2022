@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../../../public/assets/favicons/favicon3.ico">
+
+  <link rel="stylesheet" href="../../styles/index.css">
+  <link rel="stylesheet" href="user-page-my-info.css">
+  <title>User page</title>
+  <script src="../../js/templates.js"></script>
+</head>
+
+<body class="main-layout">
+  <!-- NAV MENU -->
+  <main-header></main-header>
+
+  <!-- SIDE MENU -->
+  <!-- <side-menu></side-menu> -->
+
+  <div class="main">
+
+    <div class="my-info">
+      <form class="my-info__form">
+        <div class="left-side">
+          <div class="input-group">
+            <img src="../../../public/assets/image-default-filled.svg" alt="User avatar" id="avatar">
+            <input type="file" name="avatar" id="avatar">
+          </div>
+
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+          </div>
+
+          <div class="input-group">
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail">
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="input-group input-group--wide">
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+        </div>
+
+        <div class="break"></div>
+        <button type="submit">Save</button>
+      </form>
+
+      <h1>Change password</h1>
+      <form class="my-info__change-passowrd">
+        <div class="left-side">
+          <div class="input-group">
+            <label for="current-password">Current password</label>
+            <input type="password" id="current-password">
+          </div>
+
+          <div class="input-group">
+            <label for="new-password">New password</label>
+            <input type="password" id="new-password">
+          </div>
+
+          <div class="input-group">
+            <label for="confirm-password">Confirm new password</label>
+            <input type="password" id="confirm-password">
+          </div>
+        </div>
+
+        <div class="break"></div>
+        <button type="submit">Change password</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <main-footer></main-footer>
+  <script src="../../js/menu.js"></script>
+</body>
+
+</html>
