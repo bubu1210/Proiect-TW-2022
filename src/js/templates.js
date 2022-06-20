@@ -177,8 +177,11 @@ class Header extends HTMLElement {
           <div class="profile-menu">
             <img id="user-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
             <nav class="profile-menu__dropdown">
-              <a href="../UserPage/user-page.html">My profile</a>
+              <a href="../UserPage/user-page.html">My autographs</a>
+              <a href="../UserPage/user-page-my-info.html">My profile</a>
               <a href="../UserPage/user-page-add-autograph.html">Add autograph</a>
+              <a href="../UserPage/user-page-generate-raport.html">Generate raport</a>
+              <a href="../UserPage/user-page-delete-account.html">Delete account</a>
               <a href="#">Theme</a>
               <a href="../Login/login.html">Log out</a>
             </nav>
@@ -189,40 +192,40 @@ class Header extends HTMLElement {
     }
 }
 
-class SideMenu extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-    <div class="side-menu">
-      <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
-      <p class="user-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt est fugiat dolor impedit deleniti aliquid
-        eaque quas officiis, vero consectetur quod ducimus vel at dignissimos eos assumenda autem accusamus enim.
-      </p>
-        <nav class="side-menu__nav">
-        <a class="side-menu__nav__item current" href="./user-page.html">
-          My autographs
-        </a>
+// class SideMenu extends HTMLElement {
+//   connectedCallback() {
+//     this.innerHTML = `
+//     <div class="side-menu">
+//       <img id="menu-avatar" src="../../../public/assets/avatar-default.svg" alt="User avatar">
+//       <p class="user-description">
+//         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt est fugiat dolor impedit deleniti aliquid
+//         eaque quas officiis, vero consectetur quod ducimus vel at dignissimos eos assumenda autem accusamus enim.
+//       </p>
+//         <nav class="side-menu__nav">
+//         <a class="side-menu__nav__item current" href="./user-page.html">
+//           My autographs
+//         </a>
 
-        <a class="side-menu__nav__item" href="./user-page-add-autograph.html">
-          Add autograph
-        </a>
+//         <a class="side-menu__nav__item" href="./user-page-add-autograph.html">
+//           Add autograph
+//         </a>
 
-        <a class="side-menu__nav__item" href="./user-page-my-info.html">
-          My info
-        </a>
+//         <a class="side-menu__nav__item" href="./user-page-my-info.html">
+//           My info
+//         </a>
 
-        <a class="side-menu__nav__item" href="#">
-          Generate raport
-        </a>
+//         <a class="side-menu__nav__item" href="#">
+//           Generate raport
+//         </a>
 
-        <a class="side-menu__nav__item" href="#">
-          Delete account
-        </a>
-      </nav>
-    </div>
-    `;
-  }
-}
+//         <a class="side-menu__nav__item" href="#">
+//           Delete account
+//         </a>
+//       </nav>
+//     </div>
+//     `;
+//   }
+// }
 
 class Footer extends HTMLElement {
   connectedCallback() {
@@ -257,5 +260,5 @@ class Footer extends HTMLElement {
 
 
 customElements.define("main-header", Header);
-customElements.define("side-menu", SideMenu);
+// customElements.define("side-menu", SideMenu);
 customElements.define("main-footer", Footer);
