@@ -15,6 +15,7 @@
 .nav-menu .logo-wrapper {
   display: flex;
   align-items: center;
+  font-family: var(--Permanent-Marker-font-family);
 }
 
 .nav-menu .logo-wrapper #logo {
@@ -104,4 +105,8 @@
 
 .profile-menu__dropdown a:not(:last-of-type) {
   border-bottom: 1px solid var(--black);
+}
+
+.display-username span {
+  color: red;
 }

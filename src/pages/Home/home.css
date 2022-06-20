@@ -10,25 +10,25 @@
 h1 {
   text-align: center;
   margin: 10px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   padding: 10px;
   font-family: var(--Caveat-font-family);
-  font-size: var(--h1-font-size);
+  /* font-size: var(--h1-font-size); */
 
 }
 
-.nav-menu+ * {
+.nav-menu+* {
   margin-top: 60px;
 }
 
-.carousel-wrapper {
+/* .carousel-wrapper {
   display: block;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
-}
+} */
 
-.images-plus-link {
+/* .images-plus-link {
   border-width: 3px;
   border-color: var(--black);
   border-style: solid;
@@ -38,7 +38,7 @@ h1 {
   display: flex;
   font: status-bar;
   justify-content: center;
-}
+} */
 
 /* .images-wrapper {
   display: flex;
@@ -46,7 +46,7 @@ h1 {
   margin: 0 auto;
 } */
 
-.images-wrapper img {
+/* .images-wrapper img {
   width: 60%;
   max-width: 100%;
   height: auto;
@@ -54,15 +54,15 @@ h1 {
   border-color: black;
   border-style: solid;
   padding: 5%;
-}
+} */
 
 
 
-.info-wrapper {
+/* .info-wrapper {
   display: grid;
   justify-items: center;
   align-content: center;
-}
+} */
 
 
 
@@ -156,6 +156,7 @@ h1 {
   color: var(--black);
   font-size: 2vw;
   font-family: var(--Permanent-Marker-font-family);
+  align-self: center;
 
 
 }
@@ -176,8 +177,8 @@ a:hover {
 
 .link-category img {
   display: inline;
-  width: 2vw;
-  max-width: 100%;
+  /* width: 2vw;
+  max-width: 100%; */
   padding: 5%;
 }
 
@@ -251,3 +252,37 @@ a:hover {
     border-right-width: 3px;
     border-right-color: black;
     border-right-style: solid;
+
+
+
+*/
+
+.autographsClass {
+  border-radius: var(--border-radius);
+  padding: 0 50px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+}
+
+.userName {
+  color: var(--black);
+  padding-bottom: 10px;
+  font-family: var(--Eras-font-family);
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+
+.autographDate {
+  text-align: right;
+  color: var(--black);
+  justify-self: right;
+  padding-top: 10px;
+  font-family: var(--Kalam-font-family);
+
+}
+
+
+

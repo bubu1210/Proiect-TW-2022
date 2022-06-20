@@ -63,9 +63,13 @@ form.custom-form .username-input::before {
 
 
 form.custom-form a {
-  margin: -10px 0 30px auto;
-  color: var(--text-color);
-  text-decoration: none;
+  /* !!!!! DECOMENTEAZA  !!!!! */
+  /* margin: -10px 0 30px auto;*/
+   margin: -5px 0 15px auto;
+   color: var(--text-color);
+   text-decoration: none;
+   /* UNDO : delete padding */
+   padding: 10px 0;
 }
 
 form.custom-form button[type="submit"] {
