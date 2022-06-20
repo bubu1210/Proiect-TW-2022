@@ -262,3 +262,14 @@ class Footer extends HTMLElement {
 customElements.define("main-header", Header);
 // customElements.define("side-menu", SideMenu);
 customElements.define("main-footer", Footer);
+
+function createEditableTag(tagName) {
+  const tagTemplate = document.querySelector('template[data-component-name="tag"');
+
+  const tag = tagTemplate.content.querySelector(".tag");
+  const tagContent = tag.querySelector("span");
+  tagContent.textContent = tagName;
+
+  const newTag = document.importNode(tag, true);
+  return newTag;
+}

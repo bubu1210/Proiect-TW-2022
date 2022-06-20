@@ -50,8 +50,41 @@ form .left-side {
   display: inline-block;
 }
 
+.input-group--tags #new-tag {
+  background-color: var(--grey-10);
+  width: 21px;
+  height: 21px;
+  line-height: 1;
+  border-radius: var(--border-radius);
+}
+
 ul.tag-list {
   list-style: none;
+}
+
+.tag-list .tag {
+  position: relative;
+}
+
+.tag-list .tag .remove-tag {
+  position: absolute;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  right: -7px;
+  border-radius: 50%;
+  background-color: var(--grey-20);
+  line-height: 1;
+}
+
+.tag-list .tag .remove-tag img {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 form .right-side {

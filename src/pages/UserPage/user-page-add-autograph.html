@@ -15,6 +15,12 @@
 </head>
 
 <body class="main-layout">
+  <template data-component-name="tag">
+    <li class="tag">
+      <span name="tag"></span>
+      <button type="button" class="remove-tag"><img src="../../../public/assets/icons/icons8-close.svg"></button>
+    </li>
+  </template>
   <!-- NAV MENU -->
   <main-header></main-header>
 
@@ -74,11 +80,8 @@
           <div class="input-group input-group--tags">
             <label for="tags">Tags</label>
             <input type="text" placeholder="New tag" id="tags">
-            <button>+</button>
+            <button id="new-tag" type="button">+</button>
             <ul class="tag-list">
-              <li class="tag">
-                <span>New tag</span>
-              </li>
             </ul>
           </div>
         </div>
@@ -101,6 +104,7 @@
   </main-footer>
 
   <script src="../../js/menu.js"></script>
+  <script src="../../js/add-autograph.js"></script>
 </body>
 
 </html>
