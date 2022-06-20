@@ -24,12 +24,14 @@
 }
 
 .nav-menu .logo-wrapper span {
+  display: none;
   color: var(--grey-10);
 }
 
 .searchbar-wrapper {
-  max-width: calc(30% - 40px);
-  width: calc(30% - 40px);
+  flex-grow: 1;
+  max-width: 250px;
+  margin: 0 20px;
   position: relative;
   height: 40px;
 }
@@ -133,6 +135,19 @@
   gap: 20px;
 }
 
+.filter-group .input-group {
+  margin-bottom: 5px;
+}
+
+.filter-group .input-group input {
+  display: initial;
+  width: unset;
+}
+
+.filter-group .input-group label {
+  display: initial;
+}
+
 .input-group--submit {
   flex-basis: 100%;
 }
@@ -174,6 +189,15 @@
  * ============================================
  */
 @media screen and (min-width: 992px) {
+  .nav-menu .logo-wrapper span {
+    display: inline-block;
+  }
+
+  .searchbar-wrapper {
+    max-width: calc(30% - 40px);
+    width: calc(50% - 40px);
+  }
+
   .nav-menu .advanced-search {
     position: absolute;
   }
