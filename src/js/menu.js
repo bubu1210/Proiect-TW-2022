@@ -10,4 +10,30 @@
       dropdown.classList.toggle("visible");
     }
   }
+
+  const searchBar = menu.querySelector(".searchbar-wrapper input#searchbar");
+  searchBar.addEventListener("focus", openAdvancedSearch);
+
+  function openAdvancedSearch(_ev) {
+    const advancedSearch = menu.querySelector(".advanced-search");
+    advancedSearch.classList.add("open");
+    document.body.addEventListener("click", handleClickOutsideMenu);
+  }
+
+  function handleClickOutsideMenu(ev) {
+    const isOutside = !ev.target.closest(".nav-menu");
+    console.log(isOutside);
+    if (isOutside) {
+      closeAdvancedSearch();
+      document.body.removeEventListener("click", handleClickOutsideMenu);
+    }
+  }
+
+  function closeAdvancedSearch() {
+    const advancedSearch = menu.querySelector(".advanced-search");
+    advancedSearch.classList.remove("open");
+  }
+
+  const closeBtn = menu.querySelector(".advanced-search__close");
+  closeBtn.addEventListener("click", closeAdvancedSearch);
 })();

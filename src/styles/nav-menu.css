@@ -105,3 +105,92 @@
 .profile-menu__dropdown a:not(:last-of-type) {
   border-bottom: 1px solid var(--white);
 }
+
+
+/* ADVANCED SEARCH FILTERS */
+.nav-menu .advanced-search {
+  display: none;
+  padding: 20px;
+  background-color: var(--grey-40);
+}
+
+.nav-menu .advanced-search.open {
+  display: block;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  overflow: scroll;
+}
+
+.nav-menu .advanced-search form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-group--submit {
+  flex-basis: 100%;
+}
+
+.input-group--submit input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}
+
+.input-group--submit input[type="submit"]:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.input-group input[type="range"]:first-of-type {
+  margin-right: 0;
+}
+
+.input-group input[type="range"]:last-of-type {
+  margin-left: 0;
+}
+
+.advanced-search__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--grey-10);
+  line-height: 1;
+}
+
+/**
+ * ============================================
+ * > TABLET
+ * ============================================
+ */
+@media screen and (min-width: 992px) {
+  .nav-menu .advanced-search {
+    position: absolute;
+  }
+
+  .nav-menu .advanced-search form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .nav-menu .advanced-search.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    margin-left: -20px;
+    overflow: initial;
+  }
+}
