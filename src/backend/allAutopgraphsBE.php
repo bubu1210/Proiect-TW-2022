@@ -1,5 +1,30 @@
 <?php
+// Include config file
+require_once "config.php";
 
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+  header("location: loginBE.php");
+  exit;
+}
+
+$username = "";
+$username_err = "";
+$email = $_SESSION["email"];
+
+$sql = "SELECT username FROM users WHERE email = ?";
+$stmt = mysqli_prepare($con, $sql);
+mysqli_stmt_bind_param($stmt, "s", $email);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
+  foreach ($row as $r) {
+    $_SESSION["username"] = $r;
+  }
+}
 
 ?>
 
@@ -16,6 +41,9 @@
   <link rel="stylesheet" href="../pages/AllAutographs/all-autographs.css">
 
   <script src="../js/templates2.js" type="text/javascript"></script>
+  <script>
+    var username = '<?=htmlspecialchars($_SESSION["username"])?>';
+  </script>
 
 
   <title>All autographs</title>

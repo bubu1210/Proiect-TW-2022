@@ -142,47 +142,8 @@ while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 <body class="main-layout">
   <!-- NAV MENU -->
   <main-header></main-header>
-  <!-- <div class="nav-menu">
-    <div class="logo-wrapper">
-      <a href="./homeBE.php">
-        <img id="logo" src="../../public/assets/logo-small.png" alt="AuCo - logo">
-        <span>Autograph Collector</span>
-      </a>
-    </div>
-
-    <div class="searchbar-wrapper">
-      <img id="search-icon" src="../../public/assets/icons/search_black_24dp.svg" alt="Search icon">
-      <input type="text" name="searchbar" id="searchbar">
-    </div>
-
-    <div class="profile-menu-wrapper">
-      <a href="./loginBE.php" id="login-btn">Login</a>
-
-      <div class="profile-menu">
-        <div class="display-username">
-          <span>
-            Hi
-            <?php
-            echo htmlspecialchars($_SESSION["username"]); ?>
-            !
-          </span>
-
-        </div>
-        <img id="user-avatar" src="../../public/assets/avatar-default.svg" alt="User avatar">
-        <nav class="profile-menu__dropdown">
-
-          <a href="../pages/UserPage/user-page-add-autograph.html">My profile</a>
-          <a href="">Theme</a>
-          <a href="./logoutBE.php">Log out</a>
-        </nav>
-      </div>
-    </div>
-  </div> -->
-
-
 
   <!-- HOME CONTENT -->
-
   <div class="main">
 
     <!-- Recent autographs -->
@@ -466,15 +427,13 @@ while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 
 
   </div>
+
   <!-- Footer -->
-  <main-footer>
-  </main-footer>
+  <main-footer></main-footer>
 
   <!-- SCRIPTS -->
-
   <script src="../js/menu.js" type="text/javascript"></script>
   <script src="../js/slideshow.js" type="text/javascript"></script>
-
 </body>
 
 </html>
