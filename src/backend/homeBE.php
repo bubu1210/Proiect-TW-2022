@@ -131,13 +131,18 @@ while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
 
   <script src="../js/templates2.js" type="text/javascript"></script>
 
+  <script>
+    var username = '<?=htmlspecialchars($_SESSION["username"])?>';
+  </script>
+
 
   <title>Home</title>
 </head>
 
 <body class="main-layout">
   <!-- NAV MENU -->
-  <div class="nav-menu">
+  <main-header></main-header>
+  <!-- <div class="nav-menu">
     <div class="logo-wrapper">
       <a href="./homeBE.php">
         <img id="logo" src="../../public/assets/logo-small.png" alt="AuCo - logo">
@@ -150,20 +155,19 @@ while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
       <input type="text" name="searchbar" id="searchbar">
     </div>
 
-    <div class="display-username">
-      <span>
-        Hi
-        <?php
-        echo htmlspecialchars($_SESSION["username"]); ?>
-        !
-      </span>
-      
-    </div>
-
     <div class="profile-menu-wrapper">
       <a href="./loginBE.php" id="login-btn">Login</a>
 
       <div class="profile-menu">
+        <div class="display-username">
+          <span>
+            Hi
+            <?php
+            echo htmlspecialchars($_SESSION["username"]); ?>
+            !
+          </span>
+
+        </div>
         <img id="user-avatar" src="../../public/assets/avatar-default.svg" alt="User avatar">
         <nav class="profile-menu__dropdown">
 
@@ -173,7 +177,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
         </nav>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 

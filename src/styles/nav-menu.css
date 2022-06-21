@@ -25,7 +25,10 @@
 
 .nav-menu .logo-wrapper span {
   display: none;
-  color: var(--grey-10);
+}
+
+.nav-menu span {
+  color: var(--white);
 }
 
 .searchbar-wrapper {
@@ -69,9 +72,15 @@
 }
 
 .profile-menu {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
   height: 100%;
+}
+
+.display-username {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .profile-menu #user-avatar {
@@ -81,9 +90,6 @@
   object-position: center;
   border-radius: 50%;
   background-color: var(--grey-40);
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .profile-menu__dropdown {
@@ -179,7 +185,7 @@
   top: 20px;
   width: 20px;
   height: 20px;
-  background-color: var(--grey-10);
+  background-color: var(--white);
   line-height: 1;
 }
 

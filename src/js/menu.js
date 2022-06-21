@@ -17,6 +17,11 @@
   function openAdvancedSearch(_ev) {
     const advancedSearch = menu.querySelector(".advanced-search");
     advancedSearch.classList.add("open");
+
+
+    const closeBtn = menu.querySelector(".advanced-search__close");
+    closeBtn.addEventListener("click", closeAdvancedSearch);
+
     document.body.addEventListener("click", handleClickOutsideMenu);
   }
 
@@ -34,6 +39,5 @@
     advancedSearch.classList.remove("open");
   }
 
-  const closeBtn = menu.querySelector(".advanced-search__close");
-  closeBtn.addEventListener("click", closeAdvancedSearch);
+
 })();

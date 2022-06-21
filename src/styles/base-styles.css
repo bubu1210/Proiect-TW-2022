@@ -167,7 +167,8 @@ body {
 
   /* ====== COLORS ====== */
   --black: rgba(0, 0, 0, 1);
-  --white: white;
+  --white: #ecf0f1;
+  --silver: #bdc3c7;
   --grey-100: rgba(50, 50, 50, 1);
   --grey-80: rgba(80, 80, 80, 1);
   --grey-60: rgba(100, 100, 100, 1);

@@ -24,19 +24,19 @@ footer {
   font-size: var(--small-font-size);
   font-family: var(--Eras-font-family);
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 .social-media {
   display: block;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  border-bottom: 1px solid var(--grey-40);
+  border-bottom: 1px solid var(--silver);
 }
 
 .social-media h3 {
   text-align: center;
-  color: white;
+  color: var(--white);
   margin-bottom: 10px;
   text-transform: uppercase;
 }
